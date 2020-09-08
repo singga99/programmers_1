@@ -6,6 +6,18 @@
 
 void main()
 {
-	int n;
+	int num;
 
+	printf("정수 입력 : ");
+	scanf_s("%d", &num);
+
+	if (num % 2 == 0)
+	{
+		printf("Even");
+	}
+
+	else
+	{
+		printf("Odd");
+	}
 }
