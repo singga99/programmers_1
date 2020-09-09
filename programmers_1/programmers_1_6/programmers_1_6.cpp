@@ -1,7 +1,5 @@
 // 문제 6) 정수를 담고 있는 배열 arr의 평균값을 리턴하는 함수를 완성하시오.
 
-//#define _CRT_SECURE_NO_WARNINGS
-
 #include <stdio.h>
 #include <stdbool.h>
 #include <stdlib.h>
