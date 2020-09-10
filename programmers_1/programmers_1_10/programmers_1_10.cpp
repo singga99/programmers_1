@@ -10,7 +10,7 @@ int main()
 {
 	int num;
 	int x;
-	int i = 0;
+	int n = 0;
 	int sum = 0;
 	int arr[10];
 
@@ -23,10 +23,12 @@ int main()
 	{
 		num = y % 10;
 		y = y / 10;
-		arr[i] = num;
-		i++;
+		arr[n] = num;
+		n++;
+	}
 
-		//추가하기 
+	for (int i = 0; i < n; i++)
+	{
 		sum += arr[i];
 	}
 
