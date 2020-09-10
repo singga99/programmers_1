@@ -9,8 +9,23 @@
 int main()
 {
 	int n;
-
-	printf("문자 길이를 적어주시오 : ");
+	// 한글 한 글자당 2byte 
+	char a[] = "수박";
+	char b[100];
+	
+	printf("문자의 길이를 입력하시오. : ");
 	scanf_s("%d", &n);
 
+	for (int i = 0; i < n * 2; i = i + 4)
+	{
+		b[i + 0] = a[0];
+		b[i + 1] = a[1];
+		b[i + 2] = a[2];
+		b[i + 3] = a[3];
+	}
+
+	for (int i = 0; i < n * 2; i++)
+	{
+		printf("%c", b[i]);
+	}
 }
