@@ -10,28 +10,25 @@
 
 int main()
 {
+	int count = 0;
 	char s[] = "try hello world";
-	char* s_arr[5];
-
-	int n = 0;
-
-	char* word = strtok(s, " ");
-
-	while (word != NULL)
-	{
-		s_arr[n] = word;
-		n++;
-
-		word = strtok(NULL, " ");
-	}
-
 	
-	for (int i = 0; i < 5; i++)
+	int slen = strlen(s);
+
+	for (int i = 0; i < slen; i++)
 	{
-		if (s_arr[i] != NULL)
+		if (s[i] == ' ')
 		{
-			printf("%s\n", s_arr[i]);
+			count = 1;
 		}
+
+		if (count % 2 == 0)
+		{
+			s[i] = s[i] - 32;
+		}
+
+		count++;
 	}
 
+	printf("%s", s);
 }
